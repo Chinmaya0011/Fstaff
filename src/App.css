@@ -1,0 +1,108 @@
+/* Styles for the body container */
+.body-container {
+    margin: 20px;
+  }
+  
+  /* Styles for the staff table */
+  .staff-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styles for the table headers */
+  .staff-table th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Styles for the table data cells */
+  .staff-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Styles for alternate row colors */
+  .staff-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styles for header cells */
+  .id-header,
+  .name-header,
+  .department-header,
+  .mobile-header,
+  .position-header,
+  .status-header {
+    font-weight: bold;
+  }
+  
+  /* Styles for data cells */
+  .id-data,
+  .name-data,
+  .department-data,
+  .mobile-data,
+  .position-data,
+  .status-data {
+    /* Add any additional styles as needed */
+  }
+
+  /* AddStaff.css */
+
+.add-staff-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for ID input and Generate button */
+.id-container {
+  display: flex;
+  justify-content: space-between; /* Align items with 70:30 flex ratio */
+}
+
+/* ID input field */
+#id {
+  flex: 70%;
+  margin-right: 10px; /* Add space between input field and button */
+}
+
+/* Generate button */
+.generate-button {
+  flex: 30%;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Change to desired button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3; /* Darken the color on hover */
+}
