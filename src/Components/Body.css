@@ -1,0 +1,94 @@
+.body-container {
+    margin-top: 20px;
+    
+  }
+  
+  .staff-table {
+    width:90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border-radius: 12x;
+  }
+  
+  .staff-table th, .staff-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 12x;
+  }
+  
+  .staff-table th {
+    background-color: #2cbd34;
+    text-align: left;
+  }
+  
+  .staff-row:nth-child(even) {
+    background-color: #199dd6;
+  }
+  
+  .staff-row:hover {
+    background-color: #00b4eb31;
+    color: rgb(54, 221, 16);
+  }
+  
+  .staff-action-data button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin: 2px;
+    border-radius: 3px;
+  }
+  
+  .staff-action-data button:hover {
+    background-color: #4569a0;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-inner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-inner input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .popup-inner button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .popup-inner button:hover {
+    background-color: #9745a0;
+  }
+  
+  .popup-inner button.cancel {
+    background-color: #ccc;
+  }
+  
+  .popup-inner button.cancel:hover {
+    background-color: #aaa;
+  }
+  

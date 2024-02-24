@@ -1,9 +1,30 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Header.css';
+import { auth } from '../Firebase/firebase'; // Import auth from Firebase configuration
 
-function Header() {
+function Header({ link }) {
+  const handleLogout = () => {
+    auth.signOut()
+      .then(() => {
+        console.log('User signed out successfully');
+        // Optionally redirect the user to the login page or any other page after logout
+      })
+      .catch((error) => {
+        console.error('Error signing out:', error.message);
+      });
+  };
+
   return (
-    <div style={{ padding: '10px', backgroundColor: '#f0f0f0' }}>
-      <h1 style={{ color: '#333', margin: '0' }}>MyStaff</h1>
+    <div className="header">
+      <div className="logo">MyStaff</div>
+      <nav className="navbar">
+        <ul>
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to="/add">Add Staff</Link></li>
+          <li><a href="#" onClick={handleLogout}>Logout</a></li> {/* Call handleLogout function when Logout is clicked */}
+        </ul>
+      </nav>
     </div>
   );
 }

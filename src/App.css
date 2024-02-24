@@ -106,3 +106,100 @@
 .form-button:hover {
   background-color: #0056b3; /* Darken the color on hover */
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Container for the EditForm */
+.edit-form-container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+.edit-input {
+  width: calc(100% - 20px); /* Adjusted width to account for padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Save and Cancel buttons */
+.edit-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Cancel button style */
+.edit-cancel-button {
+  background-color: #dc3545;
+  margin-right: 10px;
+}
+
+.edit-cancel-button:hover {
+  background-color: #bd2130;
+}
+.addStaff {
+  /* Style for the Link component */
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color */
+  margin-bottom: 10px;
+}
+
+.addStaff button {
+  /* Style for the button inside the Link component */
+  background-color: #007bff; /* Blue background color */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 4px; /* Add border radius */
+}
+
+.addStaff button:hover {
+  /* Hover style for the button */
+  background-color: #578ec8; /* Darker blue background color */
+}
+.gotoHome button {
+  /* Style for the button inside the Link component with the class name 'gotoHome' */
+  background-color: #007bff; /* Blue background color */
+  color: #ffffff; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  cursor: pointer; /* Show pointer cursor on hover */
+  border-radius: 4px; /* Add border radius */
+}
+
+.gotoHome button:hover {
+  /* Hover style for the button */
+  background-color: #0056b3; /* Darker blue background color */
+}

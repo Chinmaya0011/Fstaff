@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import { MyContext } from '../Context/MyContext';
-import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom'; // Import Link
+
 import '../App.css';
 
 function AddStaff() {
   const {
     id,
-    setId,
+
     name,
     setName,
     dep,
@@ -23,7 +24,9 @@ function AddStaff() {
 
   return (
     <div>
+     
       <form className="add-staff-form" onSubmit={handleSubmit}>
+ 
         <label htmlFor="id" className="form-label">ID</label>
         <input type="text" id="id" value={id} readOnly className="form-input" />
         <button type="button" onClick={generateId} className="form-button">Generate</button>
@@ -42,8 +45,8 @@ function AddStaff() {
 
         <label htmlFor="status" className="form-label">Status</label>
         <select id="status" value={status} onChange={(e) => setStatus(e.target.value)} className="form-select" required>
-          <option value="active">Active</option>
-          <option value="inactive">Inactive</option>
+          <option value="active">Inactive</option>
+          <option value="inactive">Active</option>
         </select>
 
         <button type="submit" className="form-button">Add Staff</button>
